@@ -1,495 +1,252 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio — UI/UX Designer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aria Sen | UI/UX Designer Portfolio</title>
     <meta
       name="description"
-      content="Minimal, modern portfolio showcasing thoughtful digital design."
+      content="Portfolio of Aria Sen, a UI/UX designer focused on turning complex workflows into clear, high-performing digital products."
     />
+    <meta name="theme-color" content="#f5f7fb" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Water Bubble Cursor -->
-    <div class="bubble-cursor"></div>
-    <div class="bubble-trail"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="header">
-      <nav class="nav">
-        <a href="#" class="logo">DESIGN</a>
-        <ul class="nav-links">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1 class="title">
-            Crafting <span class="highlight">purposeful</span> digital
-            experiences
-          </h1>
-          <p class="subtitle">
-            I design minimal, intuitive interfaces that solve real problems.
-            Every pixel with intention.
-          </p>
-          <div class="hero-cta">
-            <a href="#work" class="btn btn-primary">Explore work</a>
-            <a href="#contact" class="btn btn-secondary">Get in touch</a>
-          </div>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Go to top">Aria Sen</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle color mode">
+            <span class="toggle-track" aria-hidden="true">
+              <span class="toggle-thumb"></span>
+            </span>
+            <span class="toggle-label">Dark</span>
+          </button>
+          <a class="btn btn-sm" href="#contact">Hire Me</a>
         </div>
-        <div class="hero-visual">
-          <div class="gradient-orb"></div>
-        </div>
-      </section>
-
-      <!-- Work Section -->
-      <section class="work" id="work">
-        <div class="section-header">
-          <h2>Selected Work</h2>
-          <p>Diverse projects, unified by thoughtful design.</p>
-        </div>
-
-        <div class="work-grid">
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-01"></div>
-            </div>
-            <div class="work-info">
-              <h3>Aura Mobile App</h3>
-              <p>
-                Minimal meditation app with focus on breathing exercises and
-                mindfulness tracking. Reduced cognitive load by 60%.
-              </p>
-              <div class="tags">
-                <span>Mobile Design</span>
-                <span>UX Strategy</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-02"></div>
-            </div>
-            <div class="work-info">
-              <h3>Flux Dashboard</h3>
-              <p>
-                Data visualization platform for analytics. Clean interface with
-                sophisticated typography and subtle interactions.
-              </p>
-              <div class="tags">
-                <span>Web Design</span>
-                <span>Design System</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-03"></div>
-            </div>
-            <div class="work-info">
-              <h3>Atlas Marketplace</h3>
-              <p>
-                E-commerce reimagined with minimalist product discovery. Focus
-                on whitespace and clarity increased conversions by 35%.
-              </p>
-              <div class="tags">
-                <span>E-commerce</span>
-                <span>Conversion</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-04"></div>
-            </div>
-            <div class="work-info">
-              <h3>Spectrum Design System</h3>
-              <p>
-                Comprehensive component library and design tokens for a
-                multi-product ecosystem. Scalable and accessible.
-              </p>
-              <div class="tags">
-                <span>Design System</span>
-                <span>Components</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Process Section -->
-      <section class="process">
-        <div class="section-header">
-          <h2>My Approach</h2>
-          <p>A clear framework for thoughtful design.</p>
-        </div>
-
-        <div class="process-grid">
-          <div class="process-step">
-            <div class="step-number">01</div>
-            <h3>Listen</h3>
-            <p>Understand the problem deeply. User research, business goals, constraints.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">02</div>
-            <h3>Explore</h3>
-            <p>Rapid ideation and low-fidelity prototyping. Test assumptions early.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">03</div>
-            <h3>Refine</h3>
-            <p>Iterate based on feedback. Polish interactions and visual details.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">04</div>
-            <h3>Ship</h3>
-            <p>Deliver with confidence. Measure impact and learn from real usage.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="about" id="about">
-        <div class="section-header">
-          <h2>About</h2>
-        </div>
-
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              I'm a designer obsessed with clarity and simplicity. With 8+ years
-              of experience, I've worked with startups to enterprises, always
-              pushing for elegant solutions.
-            </p>
-            <p>
-              My philosophy: constraints breed creativity. Less is more. Every
-              design decision should serve a purpose.
-            </p>
-          </div>
-
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">8+</span>
-              <span class="stat-label">Years designing</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">Projects completed</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Client satisfaction</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills">
-          <h3>Skills & Tools</h3>
-          <div class="skills-grid">
-            <div>
-              <p class="skill-category">Design</p>
-              <p class="skill-list">Figma • Prototyping • Design Systems</p>
-            </div>
-            <div>
-              <p class="skill-category">Strategy</p>
-              <p class="skill-list">UX Research • User Testing • CRO</p>
-            </div>
-            <div>
-              <p class="skill-category">Front-end</p>
-              <p class="skill-list">HTML • CSS • JavaScript • React</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="section-header">
-          <h2>Let's work together</h2>
-          <p>Got a project? Let's create something minimal and meaningful.</p>
-        </div>
-
-        <div class="contact-form">
-          <form>
-            <div class="form-group">
-              <input type="text" placeholder="Your name" required />
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Your email" required />
-            </div>
-            <div class="form-group">
-              <textarea placeholder="Tell me about your project" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send message</button>
-          </form>
-        </div>
-
-        <div class="contact-links">
-          <a href="#">Dribbble</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
-          <a href="#">Email</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© 2026. Minimal. Intentional. Real.</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Avery Hale — UI/UX Designer</title>
-    <meta
-      name="description"
-      content="Portfolio of Avery Hale, UI/UX designer crafting bold, accessible digital experiences."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand">
-        <span class="brand-mark">AH</span>
-        <span class="brand-text">Avery Hale</span>
       </div>
-      <nav class="site-nav" id="siteNav">
-        <a href="#work">Work</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Let’s talk</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-      </button>
     </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1 class="title">
-            Crafting <span class="highlight">purposeful</span> digital
-            experiences
-          </h1>
-          <p class="subtitle">
-            I design minimal, intuitive interfaces that solve real problems.
-            Every pixel with intention.
-          </p>
-          <div class="hero-cta">
-            <a href="#work" class="btn btn-primary">Explore work</a>
-            <a href="#contact" class="btn btn-secondary">Get in touch</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="gradient-orb"></div>
-        </div>
-      </section>
-
-      <!-- Work Section -->
-      <section class="work" id="work">
-        <div class="section-header">
-          <h2>Selected Work</h2>
-          <p>Diverse projects, unified by thoughtful design.</p>
-        </div>
-
-        <div class="work-grid">
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-01"></div>
-            </div>
-            <div class="work-info">
-              <h3>Aura Mobile App</h3>
-              <p>
-                Minimal meditation app with focus on breathing exercises and
-                mindfulness tracking. Reduced cognitive load by 60%.
-              </p>
-              <div class="tags">
-                <span>Mobile Design</span>
-                <span>UX Strategy</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-02"></div>
-            </div>
-            <div class="work-info">
-              <h3>Flux Dashboard</h3>
-              <p>
-                Data visualization platform for analytics. Clean interface with
-                sophisticated typography and subtle interactions.
-              </p>
-              <div class="tags">
-                <span>Web Design</span>
-                <span>Design System</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-03"></div>
-            </div>
-            <div class="work-info">
-              <h3>Atlas Marketplace</h3>
-              <p>
-                E-commerce reimagined with minimalist product discovery. Focus
-                on whitespace and clarity increased conversions by 35%.
-              </p>
-              <div class="tags">
-                <span>E-commerce</span>
-                <span>Conversion</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <div class="work-preview">
-              <div class="preview-card card-04"></div>
-            </div>
-            <div class="work-info">
-              <h3>Spectrum Design System</h3>
-              <p>
-                Comprehensive component library and design tokens for a
-                multi-product ecosystem. Scalable and accessible.
-              </p>
-              <div class="tags">
-                <span>Design System</span>
-                <span>Components</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Process Section -->
-      <section class="process">
-        <div class="section-header">
-          <h2>My Approach</h2>
-          <p>A clear framework for thoughtful design.</p>
-        </div>
-
-        <div class="process-grid">
-          <div class="process-step">
-            <div class="step-number">01</div>
-            <h3>Listen</h3>
-            <p>Understand the problem deeply. User research, business goals, constraints.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">02</div>
-            <h3>Explore</h3>
-            <p>Rapid ideation and low-fidelity prototyping. Test assumptions early.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">03</div>
-            <h3>Refine</h3>
-            <p>Iterate based on feedback. Polish interactions and visual details.</p>
-          </div>
-          <div class="process-step">
-            <div class="step-number">04</div>
-            <h3>Ship</h3>
-            <p>Deliver with confidence. Measure impact and learn from real usage.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <div class="about-grid">
-          <div class="about-copy">
-            <h2>About me</h2>
-            <p>
-              I am a multidisciplinary UI/UX designer who thrives at the
-              intersection of research, systems thinking, and expressive visual
-              craft. My work turns complexity into clarity and makes products
-              feel unmistakably human.
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">UI/UX Designer for Product Teams</p>
+            <h1>
+              I design digital products that reduce friction, increase trust, and move key business metrics.
+            </h1>
+            <p class="lede">
+              I partner with startups and scale-ups to solve complex user journeys using research, systems thinking,
+              and precise interface craft.
             </p>
-            <p>
-              When I am not designing, I mentor junior designers and collect
-              signage typography from cities around the world.
-            </p>
-            <div class="about-tags">
-              <span>Accessible by default</span>
-              <span>Data-informed decisions</span>
-              <span>Story-driven UI</span>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#work">View Work</a>
+              <a class="btn btn-ghost" href="#contact">Start a Project</a>
             </div>
-          </div>
-          <div class="about-panel">
-            <h3>Design toolkit</h3>
-            <ul>
-              <li>Figma, FigJam, Maze</li>
-              <li>Prototyping & motion studies</li>
-              <li>Design systems + tokens</li>
-              <li>Usability testing</li>
-              <li>Stakeholder facilitation</li>
+            <ul class="hero-proof" aria-label="Highlights">
+              <li><strong>9+ years</strong> designing shipped products</li>
+              <li><strong>3.2x</strong> average improvement in task completion speed</li>
+              <li><strong>18</strong> cross-functional teams supported</li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section class="testimonial">
-        <div class="quote">
-          <p>
-            “Avery transformed our product from functional to unforgettable. We
-            launched faster and with total confidence in the experience.”
-          </p>
-          <span>— Jordan Park, VP Product, Arcadia</span>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="contact-card">
-          <h2>Ready to build something bold?</h2>
-          <p>
-            Tell me about the product, the users, and the ambition. I respond
-            within two business days.
-          </p>
-          <div class="contact-actions">
-            <a class="button primary" href="mailto:hello@averyhale.com"
-              >hello@averyhale.com</a
-            >
-            <a class="button ghost" href="#top">Back to top</a>
+          <div class="hero-identity reveal">
+            <div class="identity-card">
+              <p class="identity-title">Current Focus</p>
+              <p>
+                Redesigning onboarding for a B2B platform to cut time-to-value from 14 days to under 4 days.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Research</span>
+                <span class="chip">Flows</span>
+                <span class="chip">Design System</span>
+              </div>
+            </div>
+            <div class="identity-orb" aria-hidden="true"></div>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Case studies focused on decisions, trade-offs, and measurable outcomes.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-visual project-1" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>FlowPay Merchant Onboarding</h3>
+                <p class="problem">Problem: High drop-off in setup due to fragmented steps and unclear expectations.</p>
+                <p class="impact">Outcome: Activation rate improved from 41% to 76% in 8 weeks.</p>
+                <button class="text-link case-open" data-case="flowpay">Open full case study</button>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual project-2" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>MedNest Care Dashboard</h3>
+                <p class="problem">Problem: Clinicians spent too much time switching between patient panels.</p>
+                <p class="impact">Outcome: Documentation time reduced by 34% and error flags dropped 22%.</p>
+                <button class="text-link case-open" data-case="mednest">Open full case study</button>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual project-3" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Atlas Commerce Checkout</h3>
+                <p class="problem">Problem: Users abandoned checkout at shipping and payment handoff.</p>
+                <p class="impact">Outcome: Checkout conversion increased 29% with fewer support tickets.</p>
+                <button class="text-link case-open" data-case="atlas">Open full case study</button>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual project-4" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3>Kernel Design System</h3>
+                <p class="problem">Problem: Inconsistent UI patterns slowed delivery and hurt product quality.</p>
+                <p class="impact">Outcome: UI implementation speed improved 43% across 4 product squads.</p>
+                <button class="text-link case-open" data-case="kernel">Open full case study</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid reveal">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>I simplify complexity without flattening nuance.</h2>
+            <p>
+              I am a UI/UX designer who enjoys ambiguous problems. My approach combines structured research,
+              collaborative decision-making, and visual precision to build products people understand quickly.
+            </p>
+            <p>
+              I care about what users do, not only what they say. I test assumptions early, document decisions clearly,
+              and design for edge cases from day one.
+            </p>
+          </div>
+          <aside class="about-panel" aria-label="Philosophy">
+            <h3>Working Philosophy</h3>
+            <ul>
+              <li>Clarity is a feature, not decoration.</li>
+              <li>Design quality comes from iteration speed.</li>
+              <li>Good systems let teams move with confidence.</li>
+              <li>Accessibility is baseline product quality.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Capabilities</p>
+            <h2>End-to-end product design with strong collaboration across product and engineering.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>UX Strategy</h3>
+              <p>Problem framing, journey mapping, information architecture, KPI definition.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>User Research</h3>
+              <p>Interview design, usability testing, synthesis, insight prioritization.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>UI Design</h3>
+              <p>Visual systems, responsive layouts, interaction patterns, accessibility QA.</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Tools</h3>
+              <p>Figma, FigJam, Maze, Notion, Hotjar, Google Analytics, HTML/CSS/JS.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Social Proof</p>
+            <h2>Trusted by product leaders who value outcomes and craft.</h2>
+          </div>
+          <div class="quote-grid">
+            <blockquote class="quote reveal">
+              “Aria transformed our onboarding from confusing to intuitive. The work was strategic, fast, and measurable.”
+              <cite>Neha Malhotra, Head of Product at FlowPay</cite>
+            </blockquote>
+            <blockquote class="quote reveal">
+              “Her case study readouts made decision-making easy for leadership and execution easier for engineering.”
+              <cite>Daniel Price, Engineering Manager at Kernel</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Building something complex that needs to feel simple?</h2>
+            <p>
+              If you are hiring for a product designer or need a design partner for a critical initiative, I would love
+              to hear about your goals.
+            </p>
+            <a class="text-link" href="mailto:hello@ariasen.design">hello@ariasen.design</a>
+          </div>
+          <form class="contact-form" aria-label="Contact form">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Project Brief
+              <textarea name="brief" rows="5" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Avery Hale. Designed with care.</p>
-      <div class="footer-links">
-        <a href="#">Dribbble</a>
-        <a href="#">Behance</a>
-        <a href="#">LinkedIn</a>
+      <div class="container footer-wrap">
+        <p>© 2026 Aria Sen</p>
+        <a href="#top" class="text-link">Back to top</a>
       </div>
     </footer>
+
+    <div class="modal" id="caseModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="caseTitle">
+      <div class="modal-backdrop" data-close="true"></div>
+      <article class="modal-panel" role="document">
+        <button class="modal-close" id="modalClose" aria-label="Close case study">×</button>
+        <div id="caseContent"></div>
+      </article>
+    </div>
 
     <script src="script.js"></script>
   </body>
