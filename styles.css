@@ -245,10 +245,12 @@ h1 {
 
 h2 {
   font-size: var(--fs-4);
+  color: var(--text);
 }
 
 h3 {
   font-size: var(--fs-3);
+  color: var(--text);
 }
 
 p,
@@ -293,6 +295,18 @@ ul {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: var(--space-3);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.lede {
+  font-size: var(--fs-2);
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--space-4);
 }
 
 .hero-stats-grid {
@@ -432,6 +446,10 @@ ul {
   margin-bottom: var(--space-6);
 }
 
+.section-head h2 {
+  max-width: 700px;
+}
+
 .project-grid {
   display: grid;
   gap: var(--space-5);
@@ -443,12 +461,13 @@ ul {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
 .project-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-elev);
+  border-color: var(--brand);
 }
 
 .project-visual {
@@ -465,15 +484,43 @@ ul {
   padding: var(--space-5);
 }
 
-.problem,
-.impact {
+.project-body h3 {
+  color: var(--text);
   margin-bottom: var(--space-2);
 }
 
-.about-grid,
+.problem,
+.impact {
+  margin-bottom: var(--space-2);
+  color: var(--text-muted);
+}
+
 .contact-grid {
   display: grid;
   gap: var(--space-5);
+}
+
+.contact-grid > div h2 {
+  color: var(--text);
+}
+
+.contact-grid > div p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.about-grid > div h2 {
+  color: var(--text);
+}
+
+.about-grid > div p {
+  color: var(--text-muted);
+  line-height: 1.7;
 }
 
 .about-panel {
@@ -499,6 +546,18 @@ ul {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   padding: var(--space-5);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+  box-shadow: 0 8px 24px rgba(49, 94, 251, 0.08);
+}
+
+.skill-card h3 {
+  color: var(--text);
+  margin-bottom: var(--space-2);
 }
 
 .quote {
@@ -510,6 +569,8 @@ ul {
   display: block;
   color: var(--text-muted);
   font-style: normal;
+  font-size: var(--fs-1);
+  font-weight: 500;
 }
 
 .contact {
@@ -523,6 +584,12 @@ ul {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   padding: var(--space-5);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-form:focus-within {
+  border-color: var(--brand);
+  box-shadow: 0 8px 24px rgba(49, 94, 251, 0.08);
 }
 
 .contact-form label {
@@ -541,6 +608,19 @@ textarea {
   color: var(--text);
   font: inherit;
   padding: 0.7rem 0.8rem;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  background: var(--bg-alt);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
 }
 
 .site-footer {
@@ -664,7 +744,10 @@ textarea {
     grid-template-columns: 1.1fr 0.9fr;
   }
 
-  .skills-grid,
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .quote-grid {
     grid-template-columns: 1fr 1fr;
   }

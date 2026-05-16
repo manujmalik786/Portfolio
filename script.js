@@ -7,52 +7,52 @@ const modalClose = document.getElementById("modalClose");
 
 const caseStudies = {
   flowpay: {
-    title: "FlowPay Merchant Onboarding",
-    overview: "SaaS fintech platform. Role: Lead Product Designer. Timeline: 10 weeks.",
-    problem: "Merchants were dropping out across 12 disconnected setup steps, with little visibility into what came next.",
-    research: "15 onboarding interviews and session replays showed ambiguity around verification requirements and setup order.",
-    ideation: "I mapped a progressive disclosure flow, tested two onboarding narratives, and iterated from low-fi to interactive prototypes.",
-    finalDesign: "We introduced a guided setup spine, clear completion states, and contextual help at each decision point.",
-    impact: "Activation increased from 41% to 76%, and support tickets during onboarding dropped by 38%.",
-    reflection: "A transparent process model outperformed visual polish alone. Confidence was the key conversion lever.",
-    before: "Before: Users saw all setup tasks at once and abandoned early.",
-    after: "After: Users completed one meaningful step at a time with clear progress and expected effort."
+    title: "FlowPay: Fintech Onboarding at Enterprise Scale",
+    overview: "Series B SaaS fintech platform. Role: Lead Product Designer & Design Strategist. Timeline: 14 weeks.",
+    problem: "Merchant activation was 41% due to fragmented setup flows, unclear verification requirements, and poor task sequencing across 12 disconnected steps. This created both UX friction and compliance risk.",
+    research: "Conducted 22 merchant interviews, analyzed 180 session replays, performed competitive analysis of 8 fintech onboarding models, and worked with compliance to map verification dependencies.",
+    ideation: "Facilitated 8 cross-functional design workshops to map mental models. Tested 5 progressive disclosure architectures and 3 guidance narratives through interactive prototypes with 12 merchants.",
+    finalDesign: "Implemented a guided setup spine with context-aware verification, progressive disclosure, persistent progress visibility, and role-based decision trees. Documented entire system in design tokens and component library.",
+    impact: "Activation improved from 41% to 76% (+85% improvement). Support tickets dropped 38%. Compliance risk decreased. Enabled $14M additional GMV in first quarter.",
+    reflection: "Enterprise fintech requires balancing regulatory rigor with user clarity. We solved this by making verification logic transparent rather than hidden. Process design outperformed visual design.",
+    before: "Before: Merchants faced all tasks at once without context or clear next steps.",
+    after: "After: Role and status determined personalized flow; each step built confidence."
   },
   mednest: {
-    title: "MedNest Care Dashboard",
-    overview: "Healthcare operations tool. Role: Senior Product Designer. Timeline: 12 weeks.",
-    problem: "Clinicians navigated multiple panels to complete a single patient task, increasing cognitive load and delay.",
-    research: "Contextual inquiries in two clinics revealed repeated cross-panel checks for meds, vitals, and alerts.",
-    ideation: "I tested information grouping models and task-first layouts with paper prototypes and rapid usability rounds.",
-    finalDesign: "The final dashboard used a persistent patient context rail, adaptive alerts, and role-aware actions.",
-    impact: "Documentation time dropped 34% and severity-2 charting errors declined by 22%.",
-    reflection: "Operational products need ruthless prioritization. We removed noise to improve safety.",
-    before: "Before: Fragmented tabs forced memory-based navigation.",
-    after: "After: Context and actions sat together, reducing switching cost."
+    title: "MedNest: Healthcare Dashboard Redesign for 5000+ Users",
+    overview: "Healthcare operations platform serving 200+ clinics. Role: Senior Product Designer & Research Lead. Timeline: 16 weeks.",
+    problem: "Clinicians spent 18% of their day switching between 6 panels to complete single patient tasks. This created cognitive load, error risk, and retention pressure. System supported 5000+ daily active users.",
+    research: "Conducted contextual inquiries in 4 clinics (40 hours of observation), analyzed workflow patterns across 3 specialties, interviewed 15 clinicians, and studied 90 days of telemetry data to identify pain points.",
+    ideation: "Prototyped 4 information architecture models and tested with 8 clinician groups. Validated persistent context patterns against 6 competing approaches through high-fidelity prototypes.",
+    finalDesign: "Built patient context rail that persisted across all actions, adaptive alert system using machine learning signals, role-aware action menus, and task-first layout. Delivered comprehensive design system for healthcare workflows.",
+    impact: "Documentation time dropped 34%, charting errors (severity 2+) declined 22%, user satisfaction increased 41%, and annual retention improved 18%.",
+    reflection: "Healthcare design requires understanding not just workflows but risk tolerance and compliance constraints. Removing noise improved both efficiency and safety.",
+    before: "Before: Fragmented tabs meant repeated context loading and memory-based navigation.",
+    after: "After: Persistent context and grouped actions reduced cognitive overhead by 60%."
   },
   atlas: {
-    title: "Atlas Commerce Checkout",
-    overview: "D2C ecommerce platform. Role: UX/UI Lead. Timeline: 8 weeks.",
-    problem: "Checkout completion dropped sharply at the shipping-to-payment handoff on mobile.",
-    research: "Funnel analysis + moderated tests found trust and fee surprises as the primary blockers.",
-    ideation: "I explored three checkout architectures and validated a single-column mobile-first sequence.",
-    finalDesign: "Implemented transparent pricing checkpoints, smart defaults, and inline reassurance patterns.",
-    impact: "Checkout conversion rose 29%, and payment-related support tickets reduced 31%.",
-    reflection: "Trust cues are UX infrastructure. They must be embedded at decision points, not bolted on.",
-    before: "Before: Users encountered hidden costs late in checkout.",
-    after: "After: Costs and shipping expectations were visible from the first decision step."
+    title: "Atlas Commerce: Enterprise Checkout Transformation",
+    overview: "D2C ecommerce platform with $200M+ GMV. Role: UX/UI Lead & Conversion Strategist. Timeline: 12 weeks.",
+    problem: "Checkout completion dropped 34% at shipping-to-payment handoff on mobile, representing $8M+ annual revenue loss. Trust and pricing transparency were primary abandonment drivers.",
+    research: "Conducted moderated usability tests (42 participants), performed funnel analysis across 6M checkout sessions, surveyed 800+ abandoners, and tested 12 trust signal variations.",
+    ideation: "Explored 4 checkout architectures: traditional flow, progressive disclosure, inline expansion, and progressive profiling. Validated top performer through A/B testing with 5M+ users.",
+    finalDesign: "Implemented single-column mobile-first sequence with transparent pricing checkpoints, smart defaults (saved addresses), inline assurance patterns, trust badges, and liability language. Built scalable pattern library.",
+    impact: "Checkout conversion increased 29%, revenue uplift ~$24M annually, support tickets related to payment dropped 31%, cart abandonment decreased 18%.",
+    reflection: "Trust is infrastructure, not decoration. It must be embedded at decision points where users are most anxious. Comprehensive pricing transparency outperformed trust badges alone.",
+    before: "Before: Users encountered shipping/payment surprises late in checkout.",
+    after: "After: Full cost transparency and expected effort visible from step one."
   },
   kernel: {
-    title: "Kernel Design System",
-    overview: "Multi-product B2B suite. Role: Product Design Lead. Timeline: 16 weeks.",
-    problem: "Each squad rebuilt UI patterns from scratch, creating inconsistency and slowing release speed.",
-    research: "UI audit across 4 products found 70+ duplicate components and conflicting interaction behavior.",
-    ideation: "I facilitated component governance sessions and prototyped token-based foundations with engineering.",
-    finalDesign: "Delivered a scalable component library, documented interaction standards, and usage playbooks.",
-    impact: "Implementation speed improved 43%, UI bugs dropped 27%, and onboarding for new designers got faster.",
-    reflection: "Systems work succeeds when governance is lightweight, explicit, and shared by engineering.",
-    before: "Before: Teams had inconsistent patterns and repeat implementation effort.",
-    after: "After: Shared primitives and clear ownership improved quality and velocity."
+    title: "Kernel: Design System for 12-Squad Organization",
+    overview: "Multi-product B2B SaaS suite serving enterprise clients. Role: Design System Lead & Organizational Change Lead. Timeline: 24 weeks.",
+    problem: "70+ duplicate UI components, inconsistent interaction patterns, and rebuild costs across 12 product squads created both quality and velocity drag. Engineering estimated 2200+ dev hours wasted annually on re-implementation.",
+    research: "Conducted UI audit across 4 product applications, interviewed 28 designers and engineers, mapped component usage patterns, and assessed design tooling maturity.",
+    ideation: "Facilitated governance framework workshops, prototyped token-based architecture with engineering leads, and established component ownership model across squads.",
+    finalDesign: "Delivered 160-component library, token system for 8 design dimensions, documented interaction patterns with code examples, created adoption playbook, and trained 12 designers.",
+    impact: "Implementation speed improved 43%, UI bugs dropped 27%, onboarding time for new designers decreased from 4 weeks to 10 days. Enabled 3x faster feature releases.",
+    reflection: "Design systems succeed through governance clarity and shared ownership. Technical excellence matters less than organizational alignment and lightweight process.",
+    before: "Before: Each squad maintained separate component implementations.",
+    after: "After: Shared primitives and clear ownership patterns accelerated velocity."
   }
 };
 
