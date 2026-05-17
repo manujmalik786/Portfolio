@@ -18,17 +18,17 @@ const caseStudies = {
     before: "Before SkillPilot, users faced long course lists, confusing terminology, and uncertainty during decision-making.",
     after: "After the redesign, users receive personalized guidance, simplified comparisons, and clearer pathways from discovery to application."
   },
-  mednest: {
-    title: "MedNest: Healthcare Dashboard Redesign for 5000+ Users",
-    overview: "Healthcare operations platform serving 200+ clinics. Role: Senior Product Designer & Research Lead. Timeline: 16 weeks.",
-    problem: "Clinicians spent 18% of their day switching between 6 panels to complete single patient tasks. This created cognitive load, error risk, and retention pressure. System supported 5000+ daily active users.",
-    research: "Conducted contextual inquiries in 4 clinics (40 hours of observation), analyzed workflow patterns across 3 specialties, interviewed 15 clinicians, and studied 90 days of telemetry data to identify pain points.",
-    ideation: "Prototyped 4 information architecture models and tested with 8 clinician groups. Validated persistent context patterns against 6 competing approaches through high-fidelity prototypes.",
-    finalDesign: "Built patient context rail that persisted across all actions, adaptive alert system using machine learning signals, role-aware action menus, and task-first layout. Delivered comprehensive design system for healthcare workflows.",
-    impact: "Documentation time dropped 34%, charting errors (severity 2+) declined 22%, user satisfaction increased 41%, and annual retention improved 18%.",
-    reflection: "Healthcare design requires understanding not just workflows but risk tolerance and compliance constraints. Removing noise improved both efficiency and safety.",
-    before: "Before: Fragmented tabs meant repeated context loading and memory-based navigation.",
-    after: "After: Persistent context and grouped actions reduced cognitive overhead by 60%."
+  urbanroots: {
+    title: "UrbanRoots: Making Urban Farming Accessible for Modern City Living",
+    overview: "Sustainable urban farming experience designed to help city residents grow fresh food in limited spaces through guided and technology-assisted solutions. Role: UX Designer & Researcher. Timeline: 5 weeks.",
+    problem: "Urban residents want to grow their own food but struggle due to limited space, lack of knowledge, busy lifestyles, and fear of failure. Existing solutions are either too complex, expensive, or not designed for beginners living in apartments.",
+    research: "Research revealed that beginners often feel overwhelmed by gardening knowledge, maintenance responsibilities, and space constraints. Users needed simple guidance, personalized recommendations, reminders, and confidence-building support to start growing successfully.",
+    ideation: "Several concepts were explored, including AR-based space planning, real-time plant tracking, community support, and modular space-saving solutions. These ideas were combined into a guided urban farming ecosystem focused on accessibility, simplicity, and engagement.",
+    finalDesign: "The final solution offers an end-to-end urban farming experience with AR space scanning, personalized plant recommendations, real-time care tracking, and community-driven learning. The interface was designed to feel calming, beginner-friendly, and easy to integrate into busy urban lifestyles.",
+    impact: "The project explores how design can encourage sustainable living by making urban farming more approachable and manageable for everyday users. By simplifying the experience, the solution aims to promote self-sufficiency, reduce food dependency, and support environmentally conscious lifestyles.",
+    reflection: "This project helped me understand how sustainability challenges can be addressed through human-centered digital experiences. It reinforced the importance of reducing complexity and designing supportive systems that build confidence for first-time users.",
+    before: "Before the solution, users felt gardening was difficult, time-consuming, and unsuitable for apartment living.",
+    after: "After the redesign, users receive guided support, optimized layouts, and smart reminders that make urban farming feel achievable and rewarding."
   },
   atlas: {
     title: "Atlas Commerce: Enterprise Checkout Transformation",
