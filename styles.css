@@ -545,7 +545,7 @@ p, ul {
   border-bottom: 1px solid var(--line);
 }
 
-.project-1 { background: linear-gradient(135deg, #6a8bff, #3849b8); }
+.project-1 { background: linear-gradient(135deg, #00d4aa 0%, #0088cc 100%); }
 .project-2 { background: linear-gradient(135deg, #38b5a6, #29756c); }
 .project-3 { background: linear-gradient(135deg, #f2a04d, #ba6327); }
 .project-4 { background: linear-gradient(135deg, #8e7cff, #4c3cb0); }
