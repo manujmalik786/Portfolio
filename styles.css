@@ -330,12 +330,33 @@ p, ul {
   margin-bottom: var(--space-4);
 }
 
+.hero-subtitle {
+  font-size: var(--fs-3);
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+}
+
 .intro-text {
   font-size: var(--fs-2);
   line-height: 1.8;
   color: var(--text-muted);
   margin-bottom: var(--space-4);
   max-width: 600px;
+}
+
+.social-proof {
+  font-size: var(--fs-1);
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.social-proof strong {
+  color: var(--brand);
+  font-weight: 600;
 }
 
 .hero-ctas {
