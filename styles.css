@@ -95,7 +95,7 @@ img, svg {
 }
 
 .section {
-  padding: var(--space-8) 0;
+  padding: var(--space-6) 0;
 }
 
 .site-header {
@@ -261,7 +261,7 @@ p, ul {
 
 /* ===== HERO: PERSONAL ===== */
 .hero-personal {
-  padding: var(--space-8) 0 var(--space-7) 0;
+  padding: var(--space-6) 0 var(--space-5) 0;
   text-align: center;
 }
 
@@ -326,7 +326,7 @@ p, ul {
 }
 
 .hero-right h1 {
-  font-size: clamp(2.5rem, 2rem + 4vw, 4.5rem);
+  font-size: clamp(1.8rem, 1.5rem + 2.5vw, 3.2rem);
   margin-bottom: var(--space-4);
 }
 
@@ -695,7 +695,7 @@ p, ul {
 
 /* ===== CONTACT ===== */
 .contact {
-  padding: var(--space-8) 0 calc(var(--space-8) + var(--space-4)) 0;
+  padding: var(--space-6) 0;
 }
 
 .contact-grid {
