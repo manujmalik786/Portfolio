@@ -7,16 +7,16 @@ const modalClose = document.getElementById("modalClose");
 
 const caseStudies = {
   flowpay: {
-    title: "FlowPay: Fintech Onboarding at Enterprise Scale",
-    overview: "Series B SaaS fintech platform. Role: Lead Product Designer & Design Strategist. Timeline: 14 weeks.",
-    problem: "Merchant activation was 41% due to fragmented setup flows, unclear verification requirements, and poor task sequencing across 12 disconnected steps. This created both UX friction and compliance risk.",
-    research: "Conducted 22 merchant interviews, analyzed 180 session replays, performed competitive analysis of 8 fintech onboarding models, and worked with compliance to map verification dependencies.",
-    ideation: "Facilitated 8 cross-functional design workshops to map mental models. Tested 5 progressive disclosure architectures and 3 guidance narratives through interactive prototypes with 12 merchants.",
-    finalDesign: "Implemented a guided setup spine with context-aware verification, progressive disclosure, persistent progress visibility, and role-based decision trees. Documented entire system in design tokens and component library.",
-    impact: "Activation improved from 41% to 76% (+85% improvement). Support tickets dropped 38%. Compliance risk decreased. Enabled $14M additional GMV in first quarter.",
-    reflection: "Enterprise fintech requires balancing regulatory rigor with user clarity. We solved this by making verification logic transparent rather than hidden. Process design outperformed visual design.",
-    before: "Before: Merchants faced all tasks at once without context or clear next steps.",
-    after: "After: Role and status determined personalized flow; each step built confidence."
+    title: "SkillPilot: Simplifying Skill Discovery for India's Youth",
+    overview: "Experience design project focused on skill development journeys for young Indians. Role: UX Researcher & UI/UX Designer. Timeline: 4 weeks.",
+    problem: "Many youth are aware of schemes like PMKVY, but struggle to understand course options, eligibility, and career outcomes. Existing government portals are system-centric, overwhelming, and lack guidance, leading to confusion and drop-offs.",
+    research: "Research revealed that students often depend on peers or CSC centers to navigate skill schemes due to poor onboarding and unclear information. Users needed simpler language, guided recommendations, and clearer understanding of career outcomes before applying.",
+    ideation: "Multiple concepts were explored, including smart course recommendations, comparison tools, guided application flows, and real learner stories. These ideas were mapped directly against research pain points to create a more supportive and confidence-building experience.",
+    finalDesign: "The final solution combines an interest-based course finder, outcome comparison system, and step-by-step guided application flow into one seamless experience. The interface was designed to feel simple, approachable, and mobile-friendly for first-time users.",
+    impact: "The project addresses a large-scale employability challenge by helping youth move from passive awareness to confident action. By simplifying decision-making, SkillPilot aims to improve accessibility, participation, and trust in skill development systems.",
+    reflection: "This project helped me understand the importance of designing public service systems around human behavior rather than administrative structures. It reinforced how clarity, trust, and guidance can significantly improve accessibility and user confidence.",
+    before: "Before SkillPilot, users faced long course lists, confusing terminology, and uncertainty during decision-making.",
+    after: "After the redesign, users receive personalized guidance, simplified comparisons, and clearer pathways from discovery to application."
   },
   mednest: {
     title: "MedNest: Healthcare Dashboard Redesign for 5000+ Users",
