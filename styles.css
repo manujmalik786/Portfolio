@@ -424,6 +424,7 @@ p, ul {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: var(--space-8);
 }
 
 .approach-grid {
@@ -432,6 +433,19 @@ p, ul {
   gap: var(--space-6);
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+.approach-grid::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--brand-soft), var(--brand-soft), transparent);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .approach-card {
@@ -439,36 +453,77 @@ p, ul {
   border: none;
   border-radius: 0;
   padding: var(--space-5);
-  transition: transform 180ms ease;
+  transition: all 240ms ease;
   text-align: left;
   position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+}
+
+.approach-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 4%, transparent), transparent);
+  border-radius: var(--radius-md);
+  opacity: 0;
+  transition: opacity 240ms ease;
+  pointer-events: none;
 }
 
 .approach-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+}
+
+.approach-card:hover::before {
+  opacity: 1;
 }
 
 .approach-step {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--brand);
   margin-bottom: var(--space-4);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--brand) 10%, transparent);
+  background: linear-gradient(135deg, var(--brand-soft), color-mix(in srgb, var(--brand) 20%, transparent));
   font-family: var(--font-sans);
+  color: var(--brand);
+  position: relative;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--brand) 15%, transparent);
+  transition: all 240ms ease;
+}
+
+.approach-card:hover .approach-step {
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--brand) 25%, transparent);
+  transform: scale(1.05);
 }
 
 .approach-card h3 {
   color: var(--text);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   font-size: var(--fs-3);
+  position: relative;
+  transition: color 240ms ease;
+}
+
+.approach-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-soft));
+  transition: width 240ms ease;
+}
+
+.approach-card:hover h3::after {
+  width: 2.5rem;
 }
 
 .approach-card p {
@@ -476,6 +531,7 @@ p, ul {
   font-size: var(--fs-1);
   line-height: 1.7;
   margin: 0;
+  transition: color 240ms ease;
 }
 
 /* ===== IMPACT STATS ===== */
