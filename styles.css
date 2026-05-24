@@ -712,9 +712,11 @@ p, ul {
 
 .contact-grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-8);
   max-width: 1200px;
   margin: 0 auto;
+  align-items: start;
 }
 
 .contact-grid > div h2 {
@@ -724,17 +726,22 @@ p, ul {
 .contact-grid > div p {
   line-height: 1.8;
   font-size: var(--fs-2);
+  margin-bottom: var(--space-5);
+}
+
+.contact-methods {
+  display: flex;
+  gap: var(--space-4);
 }
 
 .contact-form {
   display: grid;
-  gap: var(--space-3);
+  gap: var(--space-4);
   background: var(--bg-elev);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  padding: var(--space-5);
+  padding: var(--space-6);
   transition: border-color 180ms ease, box-shadow 180ms ease;
-  max-width: 500px;
 }
 
 .contact-form:focus-within {
@@ -892,7 +899,7 @@ input::placeholder, textarea::placeholder {
   }
 
   .contact-grid {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
