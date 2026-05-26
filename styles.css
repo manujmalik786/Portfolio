@@ -650,50 +650,93 @@ p, ul {
   padding: var(--space-8) 0;
 }
 
-.story-grid {
+.story-header {
+  max-width: 700px;
+  margin: 0 auto var(--space-8);
+  text-align: center;
+}
+
+.story-header h2 {
+  margin-bottom: var(--space-4);
+}
+
+.story-intro {
+  font-size: var(--fs-2);
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.core-values {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--space-6);
-  align-items: start;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.story-content p {
-  line-height: 1.8;
-  font-size: var(--fs-2);
+.value-card {
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  text-align: center;
+  transition: all 280ms ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.story-highlights {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  position: sticky;
-  top: calc(var(--space-6) + 64px);
+.value-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 8%, transparent), transparent);
+  opacity: 0;
+  transition: opacity 280ms ease;
+  pointer-events: none;
 }
 
-.story-highlights h3 {
-  margin-top: 0;
+.value-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--brand);
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--brand) 12%, transparent);
 }
 
-.highlights-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.value-card:hover::before {
+  opacity: 1;
 }
 
-.highlights-list li {
+.value-icon {
+  font-size: 2.2rem;
   margin-bottom: var(--space-3);
-  padding: var(--space-3) 0;
-  border-bottom: 1px solid var(--line);
+  display: block;
+  transition: transform 280ms ease;
 }
 
-.highlights-list li:last-child {
-  border-bottom: none;
+.value-card:hover .value-icon {
+  transform: scale(1.15) rotateZ(5deg);
 }
 
-.highlights-list strong {
+.value-card h3 {
+  color: var(--text);
+  margin: var(--space-2) 0;
+  font-size: var(--fs-2);
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: var(--fs-1);
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+  transition: color 280ms ease;
+}
+
+.value-card:hover p {
   color: var(--text);
 }
 
