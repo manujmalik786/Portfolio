@@ -402,7 +402,7 @@ p, ul {
 
 /* ===== APPROACH SECTION ===== */
 .approach-section {
-  padding: var(--space-8) 0 var(--space-8) 0;
+  padding: var(--space-7) 0;
 }
 
 .approach-section .section-head {
@@ -416,9 +416,10 @@ p, ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-6);
-  max-width: 1100px;
+  max-width: 1120px;
   margin: 0 auto;
   position: relative;
+  width: min(1120px, 92vw);
 }
 
 .approach-card {
