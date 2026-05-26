@@ -790,7 +790,7 @@ p, ul {
   min-height: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: var(--space-4);
 }
 
 .value-item-1 {
