@@ -95,7 +95,7 @@ img, svg {
 }
 
 .section {
-  padding: var(--space-6) 0;
+  padding: var(--space-7) 0;
 }
 
 .site-header {
@@ -261,7 +261,7 @@ p, ul {
 
 /* ===== HERO: PERSONAL ===== */
 .hero-personal {
-  padding: var(--space-6) 0 var(--space-5) 0;
+  padding: var(--space-7) 0 var(--space-6) 0;
   text-align: center;
 }
 
@@ -269,7 +269,7 @@ p, ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-7);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -327,36 +327,21 @@ p, ul {
 
 .hero-right h1 {
   font-size: clamp(1.8rem, 1.5rem + 2.5vw, 3.2rem);
-  margin-bottom: var(--space-4);
-}
-
-.hero-subtitle {
-  font-size: var(--fs-3);
-  font-weight: 600;
-  color: var(--text-muted);
   margin-bottom: var(--space-5);
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .intro-text {
   font-size: var(--fs-2);
   line-height: 1.8;
   color: var(--text-muted);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
   max-width: 600px;
 }
 
 .social-proof {
-  font-size: var(--fs-1);
-  color: var(--text-muted);
-  margin-bottom: var(--space-5);
-  padding: var(--space-3) 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.social-proof strong {
-  color: var(--brand);
-  font-weight: 600;
+  display: none;
 }
 
 .hero-ctas {
@@ -606,7 +591,7 @@ p, ul {
 /* ===== PROJECT GRID ===== */
 .project-grid {
   display: grid;
-  gap: var(--space-5);
+  gap: var(--space-6);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -616,18 +601,18 @@ p, ul {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(49, 94, 251, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(49, 94, 251, 0.12);
   border-color: var(--brand);
 }
 
 .project-visual {
-  height: 200px;
+  height: 240px;
   border-bottom: 1px solid var(--line);
   background-size: cover;
   background-position: center;
@@ -647,7 +632,7 @@ p, ul {
 .project-4 { background: linear-gradient(135deg, #8e7cff, #4c3cb0); }
 
 .project-body {
-  padding: var(--space-5);
+  padding: var(--space-6);
 }
 
 .project-body h3 {
@@ -793,7 +778,7 @@ p, ul {
 
 /* ===== CONTACT ===== */
 .contact {
-  padding: var(--space-6) 0;
+  padding: var(--space-7) 0;
 }
 
 .contact-grid {
