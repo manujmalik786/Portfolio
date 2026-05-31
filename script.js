@@ -162,4 +162,11 @@ document.querySelector(".contact-form")?.addEventListener("submit", (e) => {
   }
 });
 
+document.querySelectorAll("a[href='#top']").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
 initTheme();
