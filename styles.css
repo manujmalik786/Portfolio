@@ -209,38 +209,7 @@ img, svg {
 }
 
 .contact-form .btn-primary {
-  margin-top: var(--space-2);
-  padding: 1rem 1.5rem;
-  font-size: var(--fs-2);
-  background: linear-gradient(135deg, var(--brand) 0%, color-mix(in srgb, var(--brand) 80%, #000) 100%);
-  box-shadow: 0 8px 24px rgba(49, 94, 251, 0.3), 0 0 1px rgba(49, 94, 251, 0.5) inset;
-  transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-form .btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 600ms ease;
-}
-
-.contact-form .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(49, 94, 251, 0.35), 0 0 1px rgba(49, 94, 251, 0.5) inset;
-}
-
-.contact-form .btn-primary:hover::before {
-  left: 100%;
-}
-
-.contact-form .btn-primary:active {
-  transform: translateY(-1px);
+  margin-top: var(--space-4);
 }
 
 .btn-ghost {
@@ -1074,7 +1043,6 @@ p, ul {
 /* ===== CONTACT ===== */
 .contact {
   padding: var(--space-7) 0;
-  background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--brand) 2%, transparent) 100%);
 }
 
 .contact-grid {
@@ -1086,17 +1054,8 @@ p, ul {
   align-items: start;
 }
 
-.contact-grid > div {
-  padding: var(--space-2);
-}
-
 .contact-grid > div h2 {
   margin-bottom: var(--space-4);
-  font-size: var(--fs-5);
-  background: linear-gradient(135deg, var(--text) 0%, color-mix(in srgb, var(--brand) 70%, var(--text)) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .contact-grid > div p {
@@ -1104,7 +1063,6 @@ p, ul {
   font-size: var(--fs-2);
   margin-bottom: var(--space-5);
   color: var(--text-muted);
-  transition: color 300ms ease;
 }
 
 .contact-methods {
@@ -1128,12 +1086,23 @@ p, ul {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 20% 50%, rgba(49, 94, 251, 0.08) 0%, transparent 50%);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 100% 0%, rgba(49, 94, 251, 0.1) 0%, transparent 60%);
   pointer-events: none;
-  transition: left 600ms ease;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.contact-form:hover::before {
+  opacity: 1;
+}
+
+.contact-form:hover {
+  transform: translateY(-8px);
+  border-color: var(--brand);
+  box-shadow: 0 16px 48px rgba(49, 94, 251, 0.12);
 }
 
 .contact-form:focus-within::before {
@@ -1142,13 +1111,12 @@ p, ul {
 
 .contact-form:focus-within {
   border-color: var(--brand);
-  box-shadow: 0 20px 48px rgba(49, 94, 251, 0.15), inset 0 1px 0 rgba(49, 94, 251, 0.1);
-  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(49, 94, 251, 0.12);
 }
 
 .contact-form label {
   display: grid;
-  gap: var(--space-2);
+  gap: var(--space-3);
   color: var(--text);
   font-weight: 500;
   font-size: var(--fs-2);
@@ -1158,31 +1126,25 @@ p, ul {
 
 input, textarea {
   width: 100%;
-  border-radius: 0.9rem;
-  border: 1.5px solid var(--line);
-  background: color-mix(in srgb, var(--bg) 70%, var(--brand) 2%);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--bg);
   color: var(--text);
   font: inherit;
-  padding: 1rem 1.2rem;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: var(--space-3) var(--space-3);
+  transition: all 250ms ease;
   font-size: var(--fs-2);
 }
 
 input:focus, textarea:focus {
   outline: none;
   border-color: var(--brand);
-  background: color-mix(in srgb, var(--bg-elev) 50%, var(--brand) 4%);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 10%, transparent), inset 0 1px 2px rgba(49, 94, 251, 0.08);
-  transform: scale(1.01);
+  background: var(--bg-alt);
+  box-shadow: 0 0 0 3px rgba(49, 94, 251, 0.1);
 }
 
 input::placeholder, textarea::placeholder {
   color: var(--text-muted);
-  transition: color 250ms ease;
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-  color: color-mix(in srgb, var(--text-muted) 50%, transparent);
 }
 
 /* ===== FOOTER ===== */
