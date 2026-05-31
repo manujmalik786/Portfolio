@@ -969,6 +969,8 @@ p, ul {
   .value-item-2,
   .value-item-3 {
     transform: translateY(0px) !important;
+    grid-column: auto;
+    max-width: 100%;
   }
 
   .value-item {
